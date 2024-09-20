@@ -8,7 +8,7 @@
     <title>Portfolio Website</title>
 </head>
 <body>
-    <header>
+    <!-- <header>
         <a href="#" class="logo">Khethelo</a>
         <nav>
             <a href="#" class="active">Home</a>
@@ -17,7 +17,37 @@
             <a href="#">Expirience</a>
             <a href="#">Contact</a>
         </nav>
-    </header>
+    </header> -->
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <span>Khethelo</span>
+            </div>
+            <div class="links">
+                <div class="link"><a href="#">Home</a></div>
+                <div class="link"><a href="#">About</a></div>
+                <div class="link"><a href="#">Skills</a></div>
+                <div class="link"><a href="#">Services</a></div>
+                <div class="link"><a href="#">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+            <div>
+                <div class="dropdown">
+                    <div class="links">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Skills</a>
+                        <a href="#">Service</a>
+                        <a href="#">Contact</a>
+                        <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================================ -->
     <section class="home">
         <div class="home-img">
             <img src="khethelo3.jpg" alt="">
@@ -25,7 +55,6 @@
         <div class="home-content">
             <h1>Hi, my name is <span>Khethelo</span></h1>
             <h3 class="typing-text">I'm a <span></span></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <div class="social-icons">
                 <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="#"><i class="fa-brands fa-github"></i></a>
@@ -35,5 +64,15 @@
             <a href="#" class="btn">Hire me</a>
         </div>
     </section>
+
+    <!-- ================================ -->
+     <section class="about" id="about">
+        <div class="content">
+            <div class="title"><span>About Me</span></div>
+            <div class="about-details">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+     </section>
 </body>
 </html>
