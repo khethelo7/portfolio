@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Portfolio Website</title>
 </head>
 <body>
@@ -21,15 +22,15 @@
 
     <nav>
         <div class="nav-container">
-            <div class="logo">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
                 <span>Khethelo</span>
             </div>
             <div class="links">
-                <div class="link"><a href="#">Home</a></div>
-                <div class="link"><a href="#">About</a></div>
-                <div class="link"><a href="#">Skills</a></div>
-                <div class="link"><a href="#">Services</a></div>
-                <div class="link"><a href="#">Contact</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contact</a></div>
             </div>
             <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
             <div>
@@ -50,26 +51,26 @@
     <!-- ================================ -->
      <section>
         <div class="main-container">
-            <div class="image">
+            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
                 <img src="khethelo3.jpg" alt="">
             </div>
             <div class="content">
-                <h1 data-aos="fade-left">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">
                     Hey, I'm <span>Khethelo</span>
                 </h1>
-                <div class="typewriter">
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">
                     I'm a
                     <span class="typewriter-text"></span>
                     <label for=""></label>
                 </div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique maxime saepe ea ex eos optio vitae voluptas corrupti recusandae nisi autem, iusto cum laborum nulla doloribus quisquam unde velit molestias.</p>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique maxime saepe ea ex eos optio vitae voluptas corrupti recusandae nisi autem, iusto cum laborum nulla doloribus quisquam unde velit molestias.</p>
                 <div class="social-links">
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-twitter"></i></a>
                 </div>
-                <div class="btn">
+                <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
                     <button>Hire Me</button>
                 </div>
             </div>
@@ -79,15 +80,15 @@
     <!-- ================================ -->
      <section class="about" id="about">
         <div class="content">
-            <div class="title"><span>About Me</span></div>
+            <div class="title" data-aos="fade-up" data-aos-duration="1500"><span>About Me</span></div>
             <div class="about-details">
-                <div class="left">
+                <div class="left" data-aos="fade-right" data-aos-delay="200">
                     <img src="khethelo3.jpg" alt="">
                 </div>
                 <div class="right">
-                    <div class="topic">Coding Is My Passion</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <div class="button">
+                    <div class="topic" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">Coding Is My Passion</div>
+                    <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="button" data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="400">
                         <button>Download CV</button>
                     </div>
                 </div>
@@ -98,14 +99,14 @@
     <!-- ================================ -->
      <section class="skills" id="skills">
         <div class="content">
-            <div class="title"><span>My Skills</span></div>
+            <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>My Skills</span></div>
             <div class="skills-details">
                 <div class="text">
-                    <div class="topic">
+                    <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
                         Skills Reflect Our Knowledge
                     </div>
-                    <p data-aos="fade-right">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel blanditiis quia labore odio vitae. Ratione nam voluptates repellendus, totam quas natus porro, quos alias, repellat expedita hic omnis tenetur debitis.</p>
-                    <div class="experience">
+                    <p data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel blanditiis quia labore odio vitae. Ratione nam voluptates repellendus, totam quas natus porro, quos alias, repellat expedita hic omnis tenetur debitis.</p>
+                    <div class="experience" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
                         <div class="num">10</div>
                         <div class="exp">
                             Years Of <br/>
@@ -115,20 +116,20 @@
                 </div>
                 <div class="boxes">
                     <div class="box">
-                        <div class="topic">HTML</div>
-                        <div class="per">90%</div>
+                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150">HTML</div>
+                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">90%</div>
                     </div>
                     <div class="box">
-                        <div class="topic">CSS</div>
-                        <div class="per">80%</div>
+                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="450">CSS</div>
+                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">80%</div>
                     </div>
                     <div class="box">
-                        <div class="topic">JavaScript</div>
-                        <div class="per">70%</div>
+                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="450">JavaScript</div>
+                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">70%</div>
                     </div>
                     <div class="box">
-                        <div class="topic">PHP</div>
-                        <div class="per">60%</div>
+                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="450">PHP</div>
+                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">60%</div>
                     </div>
                 </div>
             </div>
@@ -138,23 +139,23 @@
     <!-- ================================ -->
      <section class="services" id="services">
         <div class="content">
-            <div class="title"><span>My Services</span></div>
+            <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>My Services</span></div>
             <div class="boxes">
-                <div class="box">
+                <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
                     <div class="icon">
                         <i class="fas fa-desktop"></i>
                     </div>
                     <div class="topic">Web Development</div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
-                <div class="box">
+                <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
                     <div class="icon">
                         <i class="fas fa-tablet-alt"></i>
                     </div>
                     <div class="topic">App Development</div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo exercitationem voluptas, quaerat libero veritatis similique hic, adipisci sint eveniet laborum ab explicabo nostrum dicta. Unde animi impedit tempora rerum incidunt.</p>
                 </div>
-                <div class="box">
+                <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
                     <div class="icon">
                         <i class="fa fa-server"></i>
                     </div>
@@ -168,13 +169,13 @@
     <!-- ================================ -->
      <section class="contact" id="contact">
         <div class="content">
-            <div class="title">
+            <div class="title" data-aos="fade-up" data-aos-duration="1500">
                 <span>Contact Me</span>
             </div>
             <div class="text">
-                <div class="topic">Have Any Project?</div>
+                <div class="topic" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">Have Any Project?</div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <div class="button">
+                <div class="button" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
                     <button>Let's Chat</button>
                 </div>
             </div>
@@ -190,5 +191,11 @@
             </span>
         </div>
      </footer>
+
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+       AOS.init({offset:0});
+     </script>
+     <script src="script.js"></script>
 </body>
 </html>
