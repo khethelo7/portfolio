@@ -120,6 +120,40 @@ nav {
     transition: 0.2s linear;
 }
 
+.off-screen-menu {
+    /* background-color: var(--bg-color);
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px; */
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem; */
+    display: none;
+
+}
+
+.off-screen-menu.show-menu {
+    display: block;
+}
+
+.hamburg {
+    cursor: pointer;
+}
+
+/* .ham-menu {
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    position: relative;
+} */
+
 .dropdown .links a {
     display: dlex;
     color: white;

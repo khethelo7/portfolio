@@ -21,8 +21,17 @@
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Services</a></div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contact</a></div>
             </div>
-            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
-            <div>
+            <div class="ham-menu">
+                <i class="fa-solid fa-bars hamburg" id="menu-button"></i>
+                <div class="off-screen-menu">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Skills</a>
+                    <a href="#">Service</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <!-- <div>
                 <div class="dropdown">
                     <div class="links">
                         <a href="#">Home</a>
@@ -33,7 +42,7 @@
                         <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </nav>
 
@@ -235,6 +244,6 @@
      <script>
        AOS.init({offset:0});
      </script>
-     <script src="script.js"></script>
+     <script src="index.js"></script>
 </body>
 </html>
