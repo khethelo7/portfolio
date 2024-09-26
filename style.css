@@ -108,7 +108,7 @@ nav {
     color: var(--primary-color);
 }
 
-.dropdown {
+/* .dropdown {
     z-index: 100;
     position: absolute;
     top: 0;
@@ -118,29 +118,50 @@ nav {
     backdrop-filter: blur(4px) brightness(40%);
     box-shadow: 0 0 20px black;
     transition: 0.2s linear;
+} */
+
+#menu-button {
+    display: initial;
+}
+
+#menu-button.active {
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: white;
+    opacity: 0;
+    pointer-events: none;
+    font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
+}
+
+#cancel-button {
+    display: none;
+}
+
+#cancel-button.active {
+    display: initial;
 }
 
 .off-screen-menu {
-    /* background-color: var(--bg-color);
-    height: 100vh;
-    width: 100%;
-    max-width: 450px;
-    position: fixed;
-    top: 0;
-    right: -450px; */
+    display: none;
+}
 
-    /* display: flex;
+.off-screen-menu.show-menu {
+    background-color: var(--bg-color);
+
+    height: 50vh;
+
+    max-width: 800px;
+    position: fixed;
+    top: 100;
+
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 3rem; */
-    display: none;
-
-}
-
-.off-screen-menu.show-menu {
-    display: block;
+    transition: 0.3s ease;
 }
 
 .hamburg {
@@ -154,7 +175,7 @@ nav {
     position: relative;
 } */
 
-.dropdown .links a {
+.ham-menu .off-screen-menu a {
     display: dlex;
     color: white;
     text-decoration: none;
@@ -164,7 +185,7 @@ nav {
     transition: 0.2s linear;
 }
 
-.dropdown .links a:hover {
+.ham-menu .off-screen-menu a:hover {
     background-color: var(--primary-color);
 }
 
@@ -714,4 +735,8 @@ footer .text span a:hover {
         font-size: 50px;
         color: var(--primary-color);
     }
+}
+
+@media (max-width: 320px) {
+    
 }
