@@ -563,7 +563,32 @@ a:hover {
     }
 
     .hamburg {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+        font-size: 24px;
         cursor: pointer;
+        background-color: var(--bg-color);
+        padding: 10px;
+        box-shadow: 0 0 10px var(--bg-color);
+    }
+
+    .cancel {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+        font-size: 24px;
+        cursor: pointer;
+        background-color: var(--bg-color);
+        padding: 10px;
+        box-shadow: 0 0 10px var(--bg-color);
+        display: none;
+    }
+
+    .off-screen-menu.show-menu + #cancel-button {
+        display: block;
     }
 
     #menu-button {
