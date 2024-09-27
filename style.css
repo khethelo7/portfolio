@@ -483,6 +483,11 @@ section .button button:hover {
     color: white;
 }
 
+.hire-me-link,
+.lets-chat-link {
+    text-decoration: none;
+}
+
 /* Footer Section */
 footer {
     background-color: var(--primary-color);
