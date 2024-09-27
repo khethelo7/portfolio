@@ -63,16 +63,8 @@ nav {
     text-shadow: 0 0 10px var(--primary-color);
 }
 
-.hamburg,
-.cancel {
-    cursor: pointer;
-    position: absolute;
-    right: 15px;
-    top: 10px;
-    color: white;
-    opacity: 0;
-    pointer-events: none;
-    font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
+.hamburg, .cancel {
+    display: none;
 }
 
 .nav-container .links {
@@ -108,85 +100,8 @@ nav {
     color: var(--primary-color);
 }
 
-/* .dropdown {
-    z-index: 100;
-    position: absolute;
-    top: 0;
-    transform: translateY(-500px);
-    width: 100%;
-    height: auto;
-    backdrop-filter: blur(4px) brightness(40%);
-    box-shadow: 0 0 20px black;
-    transition: 0.2s linear;
-} */
-
-#menu-button {
-    display: initial;
-}
-
-#menu-button.active {
-    cursor: pointer;
-    position: absolute;
-    right: 15px;
-    top: 10px;
-    color: white;
-    opacity: 0;
-    pointer-events: none;
-    font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
-}
-
-#cancel-button {
-    display: none;
-}
-
-#cancel-button.active {
-    display: initial;
-}
-
 .off-screen-menu {
     display: none;
-}
-
-.off-screen-menu.show-menu {
-    background-color: var(--bg-color);
-
-    height: 50vh;
-
-    max-width: 800px;
-    position: fixed;
-    top: 100;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    transition: 0.3s ease;
-}
-
-.hamburg {
-    cursor: pointer;
-}
-
-/* .ham-menu {
-    height: 50px;
-    width: 50px;
-    margin-left: auto;
-    position: relative;
-} */
-
-.ham-menu .off-screen-menu a {
-    display: dlex;
-    color: white;
-    text-decoration: none;
-    justify-content: center;
-    padding: 15px;
-    align-items: center;
-    transition: 0.2s linear;
-}
-
-.ham-menu .off-screen-menu a:hover {
-    background-color: var(--primary-color);
 }
 
 section {
@@ -250,29 +165,11 @@ section .main-container {
     font-weight: 600;
 }
 
-.content .typewriter-text {
-    color: var(--primary-color);
-    text-shadow: 0 0 10px var(--primary-color);
-}
-
 .content .typewriter span {
     position: relative;
-}
-
-.content .typewriter span::before {
-    content: "Software Developer";
     color: var(--primary-color);
-    animation: words 20s infinite;
-}
-
-.content .typewriter span::after {
-    content: "";
-    background-color: var(--bg-color);
-    position: absolute;
-    width: calc(100% +8px);
-    border-left: 3px solid black;
-    right: -8;
-    animation: cursor 0.6s infinite;
+    text-shadow: 0 0 10px var(--primary-color);
+    font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
 }
 
 @keyframes cursor {
@@ -596,12 +493,12 @@ footer .text span {
     color: #fff;
 }
 
-footer .text span a {
+a {
     font-weight: 500;
     color: #fff;
 }
 
-footer .text span a:hover {
+a:hover {
     text-decoration: underline;
 }
 
@@ -649,6 +546,80 @@ footer .text span a:hover {
 }
 
 @media (max-width: 968px) {
+    .hamburg,
+    .cancel {
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: white;
+    opacity: 0;
+    pointer-events: none;
+    font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
+    }
+
+    .hamburg {
+        cursor: pointer;
+    }
+
+    #menu-button {
+        display: initial;
+    }
+    
+    #menu-button.active {
+        cursor: pointer;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        color: white;
+        opacity: 0;
+        pointer-events: none;
+        font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
+    }
+
+    .ham-menu .off-screen-menu a {
+        display: flex;
+        color: white;
+        text-decoration: none;
+        justify-content: center;
+        padding: 15px;
+        align-items: center;
+        transition: 0.2s linear;
+    }
+
+    .ham-menu .off-screen-menu a:hover {
+        background-color: var(--primary-color);
+    }
+    
+    #cancel-button {
+        display: none;
+    }
+    
+    #cancel-button.active {
+        display: initial;
+    }
+    
+    .off-screen-menu {
+        display: none;
+    }
+    
+    .off-screen-menu.show-menu {
+        background-color: var(--bg-color);
+    
+        height: 50vh;
+    
+        max-width: 800px;
+        position: fixed;
+        top: 100;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: 0.3s ease;
+    }
+
     .nav .logo {
         position: absolute;
         top: 16px;
