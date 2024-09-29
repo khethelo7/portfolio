@@ -344,7 +344,7 @@ section .button button {
 
 section .button button:hover {
     border-color: var(--primary-color);
-    background-color: #fff;
+    background-color: transparent;
     color: var(--primary-color);
 }
 
