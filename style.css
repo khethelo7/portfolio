@@ -779,4 +779,24 @@ a:hover {
     .off-screen-menu + #cancel-button {
         display: block;
     }
+
+    .off-screen-menu a {
+        text-align: left;
+        padding: 10px;
+    }
+
+    #menu-button {
+        display: initial;
+    }
+
+    #menu-button.active {
+        cursor: pointer;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        color: white;
+        opacity: 0;
+        pointer-events: none;
+        font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
+    }
 }
