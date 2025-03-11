@@ -488,13 +488,13 @@ section .button button:hover {
     text-decoration: none;
 }
 
-.hire-me-link button {
+/* .hire-me-link button {
     cursor: not-allowed;
     opacity: 0.9;
     position: relative;
-}
+} */
 
-.hire-me-link button::after {
+/* .hire-me-link button::after {
     content: "I am already hired";
     position: absolute;
     bottom: 100%;
@@ -513,7 +513,7 @@ section .button button:hover {
 
 .hire-me-link button:hover::after {
     opacity: 1;
-}
+} */
 /* Footer Section */
 footer {
     background-color: var(--primary-color);
