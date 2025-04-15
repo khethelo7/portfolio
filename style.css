@@ -413,6 +413,81 @@ section .button button:hover {
     color: var(--primary-color);
 }
 
+.skills-section {
+    padding: 2rem;
+    background-color: #0a0f1a;
+    color: #fff;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    border-bottom: 3px solid #00bfff;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+  
+  .section-description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #bbb;
+    max-width: 700px;
+  }
+  
+  .skills-matrix {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .skill-item {
+    flex: 1 1 200px;
+    background-color: #111a2e;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #1f2f46;
+  }
+  
+  .skill-item span {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #00bfff;
+  }
+  
+  .skill-item strong {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  
+  .subsection-title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #00bfff;
+  }
+  
+  .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  
+  .tag {
+    background-color: #1f2f46;
+    color: #00bfff;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid #00bfff;
+  }
+  
+  .tag:hover {
+    background-color: #00bfff;
+    color: #0a0f1a;
+  }
+  
+
 /* My Services Section */
 .services .boxes {
     display: flex;
